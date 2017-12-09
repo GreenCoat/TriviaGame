@@ -126,7 +126,6 @@ function createButtons(){
 
 function gameStart(){
 	$("#start").remove();
-	$("#main").append($("<div>").attr("id", "timer"));
 	nextQuestion();
 }
 
@@ -188,7 +187,18 @@ function checkAnswer(event){
 }
 
 function gameEnd(){
-	$("#timer").text("Game over, you got " + correct + " out of 5 questions correct!");
+	$("#timer").text("Game over, you got " + correct + " out of 5 questions correct!  Would you like to play again?");
+	var e = $("<button>").attr("id", "start").text("Start");
+	$("#main").append(e);
+	$("#textbox").text("");
+	$("#a1").text("");
+	$("#a2").text("");
+	$("#a3").text("");
+	$("#a4").text("");
+	canGuess = false;
+	countdown = 10;
+	question = 0;
+	correct = 0;
 }
 
 
