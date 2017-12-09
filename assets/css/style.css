@@ -1,0 +1,28 @@
+#main {
+	text-align: center;
+	margin: 0px auto;
+}
+
+#textbox, button {
+	color: white;
+	font-size: 24px;
+	background: navy;
+	border-radius: 20px;
+}
+
+#textbox {
+	text-align: center;
+	min-width: 200px;
+	min-height: 48px;
+}
+
+
+button {
+	min-width: 100px;
+	min-height: 32px;
+}
+
+#answers {
+	text-align: center;
+	margin: 0px auto;
+}
